@@ -3,13 +3,11 @@ import subprocess
 import cv2
 import numpy as np
 from rest_framework.response import Response
-from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import api_view
 import speech_recognition as sr
 import pytesseract
 from PIL import Image
 from django.core.files.storage import default_storage
-from paddleocr import PaddleOCR
 from .models import Transcription
 from .serializers import TranscriptionSerializer
 
@@ -21,22 +19,16 @@ IMAGE_UPLOAD_FOLDER = "media/uploads/images/"
 os.makedirs(AUDIO_UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(IMAGE_UPLOAD_FOLDER, exist_ok=True)
 
-# Initialize PaddleOCR
-ocr = PaddleOCR(lang='en')
-
 # ✅ VOICE TRANSCRIPTION (SPEECH-TO-TEXT)
-@api_view(['GET', 'POST'])  # Require login
+@api_view(['GET', 'POST'])
 def transcribe_audio(request):
     """Convert uploaded audio file to text and save it."""
     print("✅ Received speech-to-text request")
 
-
     if request.method == "GET":
         return Response({"message": "Send a POST request with an audio file to transcribe."})
 
-
     if 'audio' not in request.FILES:
-        print("❌ No audio file uploaded")
         return Response({'error': 'No audio file uploaded'}, status=400)
 
     # Save the uploaded audio file
@@ -48,62 +40,41 @@ def transcribe_audio(request):
         for chunk in audio_file.chunks():
             destination.write(chunk)
 
-    print(f"🔍 Saved audio file: {file_path}")
-
     # Convert to WAV if needed
     wav_path = file_path.rsplit(".", 1)[0] + ".wav"
-    
     try:
-        print("🎵 Converting audio to WAV...")
         subprocess.run(
             ["ffmpeg", "-i", file_path, "-ar", "16000", "-ac", "1", "-sample_fmt", "s16", wav_path],
             check=True,
             stdout=subprocess.DEVNULL, 
             stderr=subprocess.DEVNULL
         )
-
+        
         if not os.path.exists(wav_path):
-            print("❌ WAV conversion failed")
             return Response({'error': 'Failed to convert audio to WAV'}, status=500)
-
-        print("✅ Audio converted successfully")
 
         # Process audio with speech recognition
         recognizer = sr.Recognizer()
         with sr.AudioFile(wav_path) as source:
-            print("🎤 Listening to audio...")
             audio = recognizer.record(source)
 
-        try:
-            print("🧠 Performing speech recognition...")
-            text = recognizer.recognize_google(audio)
-            print(f"📜 Transcription: {text}")
+        text = recognizer.recognize_google(audio)
+        transcription = Transcription.objects.create(audio_file=wav_path, text=text)
+        serializer = TranscriptionSerializer(transcription)
 
-            # ✅ Save transcription to DB
-            transcription = Transcription.objects.create(audio_file=wav_path, text=text)
-            serializer = TranscriptionSerializer(transcription)
+        return Response({"transcription": text, "file_path": wav_path, "data": serializer.data})
 
-            return Response({"transcription": text, "file_path": wav_path, "data": serializer.data})
-
-        except sr.UnknownValueError:
-            return Response({"error": "Could not understand audio"}, status=400)
-        except sr.RequestError:
-            return Response({"error": "Speech recognition service unavailable"}, status=503)
-
-    except subprocess.CalledProcessError:
-        return Response({'error': 'ffmpeg failed to convert audio'}, status=500)
+    except (subprocess.CalledProcessError, sr.UnknownValueError, sr.RequestError):
+        return Response({'error': 'Speech recognition failed'}, status=500)
 
 # ✅ OCR IMAGE PROCESSING (TEXT FROM IMAGE)
 @api_view(['GET', 'POST'])
-  # Require login
 def ocr_image(request):
-    """Extract text from an uploaded image using PaddleOCR."""
+    """Extract text from an uploaded image using Tesseract OCR."""
     print("✅ Received OCR request")
 
-
     if request.method == "GET":
-        return Response({"message": "Send a POST request with an audio file to transcribe."})
-
+        return Response({"message": "Send a POST request with an image file to extract text."})
 
     if 'image' not in request.FILES:
         return Response({'error': 'No image file uploaded'}, status=400)
@@ -117,37 +88,22 @@ def ocr_image(request):
         for chunk in image_file.chunks():
             destination.write(chunk)
 
-    print(f"🔍 Saved image file: {file_path}")
-
-    # Perform OCR with PaddleOCR
+    # Open Image and Perform OCR
     try:
-        result = ocr.ocr(file_path, cls=True)
-
-        # Extract text from result
-        extracted_text = "\n".join([word[1][0] for line in result for word in line])
-
-        print(f"📜 Extracted Text:\n{extracted_text}")
-
-        # ✅ Save transcription to DB
+        image = Image.open(file_path)
+        extracted_text = pytesseract.image_to_string(image, config="--psm 6")
         transcription = Transcription.objects.create(image_file=file_path, text=extracted_text)
         serializer = TranscriptionSerializer(transcription)
-
+        
         return Response({"text": extracted_text, "file_path": file_path, "data": serializer.data})
-
+    
     except Exception as e:
-        print(f"❌ OCR Error: {e}")
         return Response({"error": "OCR failed", "details": str(e)}, status=500)
 
 # ✅ GET TRANSCRIPTIONS FROM DATABASE
-@api_view(['GET', 'POST'])
- # Require login
- 
+@api_view(['GET'])
 def get_transcriptions(request):
     """Retrieve all transcriptions from the database."""
-
-    if request.method == "GET":
-        return Response({"message": "Send a POST request with an audio file to transcribe."})
-
     transcriptions = Transcription.objects.all().order_by('-created_at')
     serializer = TranscriptionSerializer(transcriptions, many=True)
     return Response(serializer.data)
