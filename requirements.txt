@@ -4,7 +4,6 @@ albumentations==2.0.5
 amqp==5.2.0
 annotated-types==0.7.0
 anyio==4.8.0
-apturl==0.5.2
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 asgiref==3.8.1
