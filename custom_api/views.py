@@ -30,6 +30,11 @@ def transcribe_audio(request):
     """Convert uploaded audio file to text and save it."""
     print("✅ Received speech-to-text request")
 
+
+    if request.method == "GET":
+        return Response({"message": "Send a POST request with an audio file to transcribe."})
+
+
     if 'audio' not in request.FILES:
         print("❌ No audio file uploaded")
         return Response({'error': 'No audio file uploaded'}, status=400)
@@ -95,6 +100,11 @@ def ocr_image(request):
     """Extract text from an uploaded image using PaddleOCR."""
     print("✅ Received OCR request")
 
+
+    if request.method == "GET":
+        return Response({"message": "Send a POST request with an audio file to transcribe."})
+
+
     if 'image' not in request.FILES:
         return Response({'error': 'No image file uploaded'}, status=400)
 
@@ -131,8 +141,13 @@ def ocr_image(request):
 # ✅ GET TRANSCRIPTIONS FROM DATABASE
 @api_view(['GET', 'POST'])
  # Require login
+ 
 def get_transcriptions(request):
     """Retrieve all transcriptions from the database."""
+
+    if request.method == "GET":
+        return Response({"message": "Send a POST request with an audio file to transcribe."})
+
     transcriptions = Transcription.objects.all().order_by('-created_at')
     serializer = TranscriptionSerializer(transcriptions, many=True)
     return Response(serializer.data)

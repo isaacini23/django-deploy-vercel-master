@@ -115,6 +115,11 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',  # ✅ Forces JSON output
+    ],
+}
 
 
 # Static files (CSS, JavaScript, Images)
