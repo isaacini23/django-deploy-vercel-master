@@ -1,0 +1,985 @@
+"TimeUTC","timestampInMs","requestPath","requestMethod","requestQueryString","responseStatusCode","requestId","requestUserAgent","level","environment","branch","vercelCache","type","function","host","deploymentDomain","deploymentId","durationMs","region","maxMemoryUsed","memorySize","message","projectId"
+"2025-03-17 12:46:41",1742215601204,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",-1,"5z4tb-1742215598969-5d98d401ebfd","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:39",1742215599391,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",500,"5z4tb-1742215598969-5d98d401ebfd","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1794,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:36",1742215596734,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"j2tp4-1742215594484-2da51dfa3107","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:35",1742215595022,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",-1,"z28rg-1742215593132-8de8d2b29ab3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:34",1742215594904,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"j2tp4-1742215594484-2da51dfa3107","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1811,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:33",1742215593374,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",-1,"rsx2t-1742215591502-15b58ea13c99","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:33",1742215593171,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",500,"z28rg-1742215593132-8de8d2b29ab3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1831,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:33",1742215593067,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"k5gpp-1742215591206-23c035262153","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:31",1742215591540,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",500,"rsx2t-1742215591502-15b58ea13c99","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1817,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:31",1742215591351,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"jvtqs-1742215589518-fa0a08e503cc","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:31",1742215591260,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"k5gpp-1742215591206-23c035262153","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1791,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:31",1742215591084,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"rt7b6-1742215589174-f332df7a96b3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:30",1742215590386,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",-1,"rnvgz-1742215588585-15cb67c291e4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:30",1742215590358,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",-1,"n59xk-1742215588531-8ca5d2954e9d","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:29",1742215589557,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"jvtqs-1742215589518-fa0a08e503cc","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1768,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:29",1742215589405,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"4zh6h-1742215587526-5d5c01114c21","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:29",1742215589245,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"rt7b6-1742215589174-f332df7a96b3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1821,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:29",1742215589072,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"sf2j4-1742215587179-2dfc175b67ab","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:28",1742215588669,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",500,"rnvgz-1742215588585-15cb67c291e4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1702,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:28",1742215588567,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/favicon.ico","GET","",500,"n59xk-1742215588531-8ca5d2954e9d","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1774,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:28",1742215588516,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"zftb9-1742215586744-92d6b399d022","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:28",1742215588441,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"rt7b6-1742215586636-daf493bd8d96","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:27",1742215587562,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"4zh6h-1742215587526-5d5c01114c21","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1821,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:27",1742215587216,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"sf2j4-1742215587179-2dfc175b67ab","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1837,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:27",1742215587089,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"mssn8-1742215585216-a28d2c4becd3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:26",1742215586781,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"zftb9-1742215586744-92d6b399d022","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1718,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:26",1742215586696,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"rt7b6-1742215586636-daf493bd8d96","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1726,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:26",1742215586625,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"rjg2n-1742215584840-f85b06f596f2","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:26",1742215586446,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"kjlpx-1742215584669-30c6c63d38d2","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:25",1742215585486,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"79mbf-1742215583581-dd399a0296c4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:25",1742215585253,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"mssn8-1742215585216-a28d2c4becd3","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1818,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:25",1742215585111,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"wmkxz-1742215581497-d1821493fdcb","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:24",1742215584874,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"rjg2n-1742215584840-f85b06f596f2","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1736,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:24",1742215584708,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"kjlpx-1742215584669-30c6c63d38d2","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1721,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:24",1742215584241,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"kjlpx-1742215581104-ebd30422d81c","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:24",1742215584161,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"fd5fn-1742215580932-bbaeb7d5148e","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:23",1742215583616,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"79mbf-1742215583581-dd399a0296c4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1847,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:22",1742215582737,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"nwwhs-1742215580831-09a3162b5c87","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:22",1742215582621,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"97zqc-1742215580824-65643c49e3e0","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:22",1742215582517,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"b84sp-1742215580800-79e0cd3f0a57","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:22",1742215582056,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"6hhg7-1742215578660-c9bb290f59a3","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:21",1742215581534,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"wmkxz-1742215581497-d1821493fdcb","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1901,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:21",1742215581144,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"kjlpx-1742215581104-ebd30422d81c","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1715,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:20",1742215580974,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"fd5fn-1742215580932-bbaeb7d5148e","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1704,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:20",1742215580871,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"97zqc-1742215580824-65643c49e3e0","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1736,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:20",1742215580868,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"nwwhs-1742215580831-09a3162b5c87","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1854,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:20",1742215580839,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"b84sp-1742215580800-79e0cd3f0a57","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1661,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:20",1742215580416,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"28zmv-1742215578589-272ba6de21e3","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:19",1742215579746,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"p8d9k-1742215576210-8137dc048107","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:19",1742215579707,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",-1,"z4nfz-1742215576245-a21a9cbf05f4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",-1,"iad1",-1,-1,"Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.
+Traceback (most recent call last):
+File ""/var/task/vc__handler__python.py"", line 14, in <module>
+__vc_spec.loader.exec_module(__vc_module)
+File ""<frozen importlib._bootstrap_external>"", line 999, in exec_module
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""/var/task/test_project/wsgi.py"", line 16, in <module>
+application = get_wsgi_application()
+^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/core/wsgi.py"", line 12, in get_wsgi_application
+django.setup(set_prefix=False)
+File ""/var/task/django/__init__.py"", line 24, in setup
+apps.populate(settings.INSTALLED_APPS)
+File ""/var/task/django/apps/registry.py"", line 91, in populate
+app_config = AppConfig.create(entry)
+^^^^^^^^^^^^^^^^^^^^^^^
+File ""/var/task/django/apps/config.py"", line 193, in create
+import_module(entry)
+File ""/var/lang/lib/python3.12/importlib/__init__.py"", line 90, in import_module
+return _bootstrap._gcd_import(name[level:], package, level)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1310, in _find_and_load_unlocked
+File ""<frozen importlib._bootstrap>"", line 488, in _call_with_frames_removed
+File ""<frozen importlib._bootstrap>"", line 1387, in _gcd_import
+File ""<frozen importlib._bootstrap>"", line 1360, in _find_and_load
+File ""<frozen importlib._bootstrap>"", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+Python process exited with exit status: 1. The logs above can help with debugging the issue.","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:18",1742215578745,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"6hhg7-1742215578660-c9bb290f59a3","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1745,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:18",1742215578715,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"28zmv-1742215578589-272ba6de21e3","Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) obsidian/1.8.4 Chrome/130.0.6723.191 Electron/33.3.2 Safari/537.36","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1678,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:16",1742215576445,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"z4nfz-1742215576245-a21a9cbf05f4","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1783,"iad1",76,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
+"2025-03-17 12:46:16",1742215576444,"django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app/","GET","",500,"p8d9k-1742215576210-8137dc048107","vercel-screenshot/1.0","error","production","main","MISS","lambda","/test_project/wsgi.py","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","django-deploy-vercel-master-9lov74bia-isaacini23s-projects.vercel.app","dpl_ApDJDrD9AxZj82XF67DcpKMeaJny",1790,"iad1",77,1024,"","prj_JYdFEIJKNFKBcQbY8Q2remWBMJcG"
