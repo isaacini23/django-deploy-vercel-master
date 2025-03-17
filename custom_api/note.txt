@@ -1,0 +1,8 @@
+for sending files use this
+
+curl -X POST -F "image=@your_image.jpg" http://127.0.0.1:8000/ocr_image/
+
+
+curl -X POST -H "Authorization: Bearer your_access_token" \
+     -F "audio=@your_audio.wav" \
+     http://127.0.0.1:8000/transcribe/
