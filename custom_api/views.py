@@ -9,13 +9,13 @@ from django.core.files.storage import default_storage
 from .models import Transcription
 from .serializers import TranscriptionSerializer
 
-# Define storage paths
-AUDIO_UPLOAD_FOLDER = "media/uploads/audio/"
-IMAGE_UPLOAD_FOLDER = "media/uploads/images/"
+AUDIO_UPLOAD_FOLDER = "/tmp/audio/"
+IMAGE_UPLOAD_FOLDER = "/tmp/images/"
 
-# Ensure storage folders exist
+
 os.makedirs(AUDIO_UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(IMAGE_UPLOAD_FOLDER, exist_ok=True)
+
 
 # ✅ VOICE TRANSCRIPTION (SPEECH-TO-TEXT)
 @api_view(['GET', 'POST'])
