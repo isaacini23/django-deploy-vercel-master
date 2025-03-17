@@ -1,7 +1,5 @@
 import os
 import subprocess
-import cv2
-import numpy as np
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 import speech_recognition as sr
